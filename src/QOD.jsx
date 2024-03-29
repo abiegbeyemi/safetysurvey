@@ -33,6 +33,16 @@ export default function () {
         correctAnswer: "30:2"
 
     },
+    {
+        type: "radiogroup",
+        name: "question4",
+        title: "How many lifeguards need to be on duty if the pool is full?",
+        choices: [
+            "5", "1", "10", "3"
+        ],
+        correctAnswer: "3"
+
+    },
 
     ];
     const nQuestion = Math.floor((Math.random() * questions.length));
