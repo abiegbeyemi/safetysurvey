@@ -7,47 +7,107 @@ export default function () {
     const questions = [{
         type: "radiogroup",
         name: "question1",
-        title: "What is the most common cause of lifeguard injuries?",
+        title: "What is the main reason for a kitchen ventilation system?",
         choices: [
-            "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+            "Add flavor to food", "Cool down the kitchen", "Remove heat, smoke, and odours", "Increase humidity"
         ],
-        correctAnswer: "Slip and fall accidents"
+        correctAnswer: "Remove heat, smoke, and odours"
     },
     {
         type: "radiogroup",
         name: "question2",
-        title: "What is the one thing lifeguards have to wear around their neck?",
+        title: "What are the recommended methods for safely thawing frozen food?",
         choices: [
-            "Sunglasses", "Necklace", "Whistle", "Scarf"
+            "Leave out in room", "Thaw in fridge", "Thaw in hot water", "Thaw in microwave",
         ],
-        correctAnswer: "Whistle"
+        correctAnswer: "Thaw in fridge"
 
     },
     {
         type: "radiogroup",
         name: "question3",
-        title: "What is the correct ratio of chest compressions to rescue breaths when administering CPR to a drowning victim?",
+        title: "How should cooking oils be safely stored and disposed?",
         choices: [
-            "15:1", "30:2", "5:1", "20:2"
+            "Store on the counter", "Dispose down the drain", "Stored away from heat and closed", "Pour in the trash when hot",
         ],
-        correctAnswer: "30:2"
+        correctAnswer: "Stored away from heat and closed"
 
     },
     {
         type: "radiogroup",
         name: "question4",
-        title: "How many lifeguards need to be on duty if the pool is full?",
+        title: "In the event of a small grease fire, what should be done?",
         choices: [
-            "5", "1", "10", "3"
+            "Throw water on it", "Cover pan with lid", "Pour baking soda over it", "Use fire extinguisher",
         ],
-        correctAnswer: "3"
+        correctAnswer: "Cover pan with lid"
+
+    },
+    {
+        type: "radiogroup",
+        name: "question5",
+        title: "When done boiling, where should eggs be put?",
+        choices: [
+            "An ice bath" , "In a containter", "On the counter", "Left on the stove",
+        ],
+        correctAnswer: "An ice bath"
+
+    },
+    {
+        type: "radiogroup",
+        name: "question6",
+        title: "How often should cutting boards be washed after cutting meat?",
+        choices: [
+            "Once a day", "Once a week", "Once a month", "After each use"
+        ],
+        correctAnswer: "After each use"
+
+    },
+    {
+        type: "radiogroup",
+        name: "question7",
+        title: "True or false, gloves are more sanitary than washed clean hands?",
+        choices: [
+            "True", "False", "Depends who you ask"
+        ],
+        correctAnswer: "False"
+
+    },
+    {
+        type: "radiogroup",
+        name: "question8",
+        title: "What is the proper way to lift a heavy pot?", 
+        choices: [
+            "Grab one handle and suport the bottom", "Use one hand to life", "Slide across counter", "Tilt over and lift",
+        ],
+        correctAnswer: "Grab one handle and suport the bottom"
+
+    },
+    {
+        type: "radiogroup",
+        name: "question9",
+        title: "What is the proper way to put a knife in the sink?",
+        choices: [
+            "Handle first", "Throw it in", "Blade first", "Under the dishes"
+        ],
+        correctAnswer: "Blade first"
+
+    },
+     {
+        type: "radiogroup",
+        name: "question10",
+        title: "True or False, Aprons are required in the kitchen when working with food?", 
+        choices: [
+            "True", "False"
+        ],
+        correctAnswer: "True"
 
     },
 
     ];
     const nQuestion = Math.floor((Math.random() * questions.length));
     const surveyJson = {
-        title: "Book Keeping Safety",
+        title: "Restaurant Kitchen & Food Safety",
         showCorrectAnswer: "always",
         showProgressBar: "bottom",
         firstPageIsStarted: true,
@@ -55,7 +115,7 @@ export default function () {
         pages: [{
             elements: [{
                 type: "html",
-                html: "You are about to start a quiz on Book Keeping Safety. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
+                html: "You are about to start a quiz on Kitchen and Food Safety. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
             }, {
                 type: "text",
                 name: "username",
